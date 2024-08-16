@@ -12,13 +12,15 @@
     
     <script>
         let a=document.getElementById("di")
-        a.innerHTML= "<div><h1>helloworld</h1></div>" -->
+        a.innerHTML= "<div><h1>helloworld</h1></div>" 
+        
 
 
      
     <!-- </script> -->
 
     <!-- getElementsByTagName -->
+     <!-- <h1></h1>
      <h1></h1>
      <h1></h1>
      <h1></h1>
@@ -27,10 +29,9 @@
      <h1></h1>
      <h1></h1>
      <h1></h1>
-     <h1></h1>
-     <h1></h1>
+     <h1></h1> -->
 
-     <script>
+     <!-- <script>
         const element=document.getElementsByTagName("h1");
         for(let i=0;i<element.length;i++)
      {
@@ -41,6 +42,49 @@
             element[i].innerHTML="second content"
         }
      }
-     </script>
+     </script> -->
+
+     <!-- getElementByclassname -->
+      <!-- <h1 class="demo">hello world</h1>
+      <h1 class="demo1">hai</h1>
+      <h1 class="demo2">how</h1>
+      <script>
+        const element=document.getElementsByClassName("demo");
+        for(i=0;i<element.length;i++){
+            element[i].innerHTML="this is new heading"
+        }
+        
+      </script> -->
+
+
+      <!-- <h1 id="demo">hello world</h1>
+
+      <script>
+        const newelement=document.createElement("p");
+        newelement.innerHTML="this is new para";
+        document.body.appendChild(newelement);
+      </script> -->
+
+
+      <!-- <div id="parentdiv"></div>
+
+      <script>
+        const parentdiv=document.getElementById("parentdiv");
+        const childdiv=document.createElement("div");
+        childdiv.innerHTML="this is new div";
+        parentdiv.appendChild(childdiv)
+      </script> -->
+
+
+      <!-- setattribute  -->
+
+      <div id="parentdiv"></div>
+
+      <script>
+        const a=document.getElementById("parentdiv");
+        a.setAttribute("class","highlight")
+      </script>
+
+
 </body>
 </html>
