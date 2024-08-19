@@ -10,7 +10,7 @@
     <!-- adding eventlistner and handler using dom  -->
     
 
-    <button type="button" id="demo">click here</button>
+    <!-- <button type="button" id="demo">click here</button>
 
     <script>
 
@@ -20,6 +20,39 @@
         }
         const button=document.getElementById("demo")
         button.addEventListener('click',handleclick)
-    </script>
+
+        // settimeout 
+    
+        setTimeout(()=>{button.removeEventListener('click',handleclick)},3000)
+    </script> -->
+
+    <!-- event object  -->
+
+
+     <!-- <button type="button" id="demo">click me</button>
+     <script>
+        const but = document.getElementById("demo");
+    but.addEventListener('click', function(event) {
+    console.log("event type:", event.type);
+    console.log("event target:", event.target);
+});
+
+     </script> -->
+
+
+     <a href="https://www.youtube.com/" id="mylink">click</a>
+     <script>
+        const link=document.getElementById("mylink");
+        link.addEventListener('click',(event)=>{
+            event.preventDefault();
+        })
+     </script>
+
+
+    
+
+    
+
+
 </body>
 </html>
